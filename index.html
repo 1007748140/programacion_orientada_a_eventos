@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    
+</head>
+<body>
+
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+    body{
+    background-image: url(./imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*Estilo para la la barra de navegacion*/
+    nav {
+        background-color: #000000;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 60px;
+        
+      }
+      nav ul li{
+        list-style: none;
+        float:right;
+        padding-inline: 20px;
+        align-items: center;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: #fffdfd;
+        
+        
+      }
+      nav ul li a:hover{
+        color: #00ccff;
+        
+      }
+/*Estilo para la lista de talleres*/
+      .menu{
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        width: 300px;
+        list-style: none;
+        margin: auto;
+      }
+      .menu li a{
+        display: block;
+        color: #ffffff;
+        text-align: left;
+        padding: 20px;
+        text-decoration: none;
+      }
+      .menu li a:hover{
+        background-color: rgb(80, 255, 246);
+        color: #000000;
+      }
+/*Estilo para el titulo h1, talleres*/
+      .lista-talleres{
+        background-color: rgb(255, 219, 16);
+        width: 300px;
+        list-style: none;
+        border-radius: 10px;
+        margin: 10px;
+       
+      }
+      .lista-talleres:hover{
+        background-color: aqua;
+      }
+
+
+      /*div para ubicar las lista que estan dentro de los cuadros de forma lineal*/
+  div{
+   column-count:4;
+   column-gap:20px;
+
+  }
+    </style>
+
+    <nav>
+        <ul>
+          <li><a href="./apuntes/apuntes.html">Apuntes</a></li>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+<br>
+
+<div>
+  
+    <ul class="menu">
+      <h1 class="lista-talleres">Lista de talleres📔</h1>
+      <li><a href="ISTORIA_DE_HTML.pdf">Taller 1 - Historia del HTML</a></li>
+      <li><a href="./taller hola mundo/hola_mundo.html">Taller 2 - Hola mundo</a></li>
+      <li><a href="./taller tipos de tabla/taller_2.html">Taller 3 - Tablas</a></li>
+      <li><a href="./taller tipos de listas/lista_2.html">Taller 4 - listas, Estilos, secciones</a></li>
+    </ul>
+    
+      <ul class="menu">
+        <h1 class="lista-talleres">Apuntes📝</h1>
+        <li><a href="./apuntes/introduccion.html">insertar imagenes, tip. texto...</a></li>
+        <li><a href="./apuntes/tipos_lista.html">listas, Estilos, secciones...</a></li>
+      </ul>
+  </div>
+
+</body>
+</html>
+
